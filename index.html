@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand fs-4 fw-bold" href="#">Azril Januar Athallah</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,16 +18,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#project">Project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -35,21 +35,21 @@
       </nav>
     
     <section id="home" class="home container">
-        <div class="row d-flex align-items-center">
-            <div class="col-8">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
                 <h3 class="fw-semibold">Hello! I am</h3>
                 <h1 class="fw-bold">Azril Januar Athallah</h1>
                 <p>Front-End Developer Enthusiast</p>
                 <a class="btn button" href="images/potrait.png" download>Resume</a>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
                 <img src="images/potrait.png" alt="Potrait">
             </div>
         </div>
-        <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-            <a class="text-decoration-none text-dark" href="#about">More Info</a>
+        <a href="#about" class=" arrow text-decoration-none w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark" href="#about">More Info</div>
             <img id="arrow" class="mt-2" src="images/arrow.svg" alt="arrow icon">
-        </div>
+        </a>
     </section>
 
     <section id="about" class="about container">
@@ -88,20 +88,20 @@
         </div>
     </section>
 
-    <section id="work" class="work container">
+    <section id="project" class="project container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-5">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dicta dignissimos repudiandae est suscipit alias ratione quaerat voluptas distinctio, quidem ipsam quas eos porro repellat illum odit maxime eligendi placeat libero rerum dolorem quasi. Expedita nobis sint, neque labore dignissimos quos repellat? Beatae totam mollitia asperiores numquam suscipit exercitationem vel?</p>
             </div>
-            <div class="col work-img">
-                <div id="work-1" class="work-img-item">
-                    <img src="images/work-1.png" alt="work 1">
+            <div class="col-12 col-6 project-img">
+                <div id="project-1" class="project-img-item">
+                    <img src="images/work-1.png" alt="project 1">
                 </div>
-                <div id="work-2" class="work-img-item">
-                    <img src="images/work-2.png" alt="work 2">
+                <div id="project-2" class="project-img-item">
+                    <img src="images/work-2.png" alt="project 2">
                 </div>
-                <div id="work-3" class="work-img-item">
-                    <img src="images/work-3.png" alt="work 3">
+                <div id="project-3" class="project-img-item">
+                    <img src="images/work-3.png" alt="project 3">
                 </div>
             </div>
         </div>
@@ -109,24 +109,24 @@
 
     <section id="contact" class="contact container">
         <div class="row d-flex align-items-center gap-5">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam saepe optio, fugit fuga laudantium, minus magnam deleniti cumque illo tempora tempore facilis aliquam modi quisquam dicta assumenda animi eligendi sunt. Cumque perferendis natus, consectetur accusantium, eius blanditiis quas, delectus atque cum commodi molestiae! Cupiditate quod vitae ab molestias! Impedit!</p>
                 <div class="row gap">
                     <div class="col d-flex align-items-center">
-                        <img src="images/linkedin.png" alt="linkedin icon">
-                        <p>Azril Januar Athallah</p>
+                        <img class="w-25" src="images/linkedin.png" alt="linkedin icon">
+                        <p class="mb-0 ms-2">Azril Januar Athallah</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                        <img src="images/instagram.png" alt="instagram icon">
-                        <p>@azriljanuar</p>
+                        <img class="w-25" src="images/instagram.png" alt="instagram icon">
+                        <p class="mb-0 ms-2">@azriljanuar</p>
                     </div>
                     <div class="col d-flex align-items-center">
-                        <img src="images/whatsapp.png" alt="whatsapp icon">
-                        <p>+6282342636663</p>
+                        <img class="w-25" src="images/whatsapp.png" alt="whatsapp icon">
+                        <p class="mb-0 ms-2">+6282342636663</p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-5">
                 <form class="contact-form" onsubmit="onFormSubmit(event)">
                     <div class="mb-3">
                       <label for="inp_email" class="form-label">Email Address</label>

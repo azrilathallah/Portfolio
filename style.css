@@ -7,8 +7,8 @@ section::before {
     z-index: -1;
     content: '';
     font-size: 72px;
-    color: gray;
-    opacity: 0.25;
+    color: black;
+    opacity: 0.75;
     position: absolute;
     font-weight: 700;
     top: 20px;
@@ -39,6 +39,10 @@ section::before {
     font-size: 48px;
 }
 
+.home img {
+    width: 100%;
+}
+
 .home .arrow img {
     width: 60px;
 }
@@ -61,26 +65,26 @@ section::before {
     display: none;
 }
 
-.work::before {
+.project::before {
     content: 'My Projects';
 }
 
-.work-img {
+.project-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "work-1 work-2" "work-3 work-3";
+    grid-template-areas: "project-1 project-2" "project-3 project-3";
     gap: 16px; 
 }
 
-.work-img img {
+.project-img img {
     width: 100%;
 }
 
-.work-img-item {
+.project-img-item {
     position: relative;
 }
 
-.work-img-item:hover::after {
+.project-img-item:hover::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -96,27 +100,27 @@ section::before {
     font-size: 24px;
 }
 
-#work-1 {
-    grid-area: work-1;
+#project-1 {
+    grid-area: project-1;
 }
 
-#work-1:hover::after {
+#project-1:hover::after {
     content: 'Portofolio Website';
 }
 
-#work-2 {
-    grid-area: work-2;
+#project-2 {
+    grid-area: project-2;
 }
 
-#work-2:hover::after {
+#project-2:hover::after {
     content: 'Student Academic Monitoring System';
 }
 
-#work-3 {
-    grid-area: work-3;
+#project-3 {
+    grid-area: project-3;
 }
 
-#work-3:hover::after {
+#project-3:hover::after {
     content: 'Richdjoe Barbershops Website';
 }
 
@@ -146,6 +150,12 @@ section::before {
     width: 100%;
     border: 3px solid black;
     border-radius: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
 }
 
 @keyframes UpDown {
