@@ -105,7 +105,7 @@ section::before {
 }
 
 #project-1:hover::after {
-    content: 'Portofolio Website';
+    content: 'Portfolio Website';
 }
 
 #project-2 {
